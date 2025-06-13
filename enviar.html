@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enviar Mensagem - Compartilhamento em Tempo Real</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="valentines-bg"></div>
+    <header class="valentines-header">
+        <img src="img/11.png" alt="Casal de pintinhos" class="header-img">
+        <h1>Envie sua Mensagem 💖</h1>
+        <p class="subtitle">Compartilhe seu amor com alguém especial!</p>
+    </header>
+    <div class="container">
+        <form id="share-form" class="share-form">
+            <div class="input-group">
+                <input type="text" id="from-input" placeholder="De quem é a mensagem?" class="text-input">
+                <input type="text" id="to-input" placeholder="Para quem é a mensagem?" class="text-input">
+                <input type="email" id="email-input" placeholder="Seu email (não será exibido)" class="text-input">
+                <textarea id="text-input" placeholder="Digite sua mensagem..."></textarea>
+                <div class="file-input-container">
+                    <label for="image-input" class="file-label">
+                        📷 Escolher imagem
+                    </label>
+                    <input type="file" id="image-input" accept="image/*">
+                </div>
+            </div>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="preview" class="preview-container"></div>
+    </div>
+    <footer class="valentines-footer">
+        <a href="index.html" class="back-button">← Voltar para o Feed</a>
+        <img src="img/9.png" alt="Pintinho com coração" class="footer-img">
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>
+    <script src="js/form.js"></script>
+</body>
+</html> 
