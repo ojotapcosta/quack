@@ -10,8 +10,10 @@
     <div class="valentines-bg"></div>
     <header class="valentines-header">
         <img src="img/11.png" alt="Casal de pintinhos" class="header-img">
-        <h1>Envie sua Mensagem 💖</h1>
-        <p class="subtitle">Compartilhe seu amor com alguém especial!</p>
+        <h1 class="header-title" style="margin-left: 18px;">Eternize o seu amor!</h1>
+        <p class="subtitle" style="max-width: 500px; margin: 0 auto 1.5em auto; padding: 0 10px; font-family: 'Mundial Regular', 'Segoe UI', 'Arial', sans-serif;">
+            Todas as mensagens serão gravadas na blockchain para a eternidade. Assim que tudo estiver pronto, você receberá o link no email cadastrado 💖
+        </p>
     </header>
     <div class="container">
         <form id="share-form" class="share-form">
@@ -22,7 +24,7 @@
                 <textarea id="text-input" placeholder="Digite sua mensagem..."></textarea>
                 <div class="file-input-container">
                     <label for="image-input" class="file-label">
-                        📷 Escolher imagem
+                        📷 Escolher foto
                     </label>
                     <input type="file" id="image-input" accept="image/*">
                 </div>
@@ -32,7 +34,7 @@
         <div id="preview" class="preview-container"></div>
     </div>
     <footer class="valentines-footer">
-        <a href="index.html" class="back-button">← Voltar para o Feed</a>
+        <!-- Botão de voltar removido -->
         <img src="img/9.png" alt="Pintinho com coração" class="footer-img">
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js"></script>

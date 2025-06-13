@@ -97,8 +97,8 @@ form.addEventListener('submit', async (e) => {
         previewContainer.innerHTML = ''
         selectedImage = null
 
-        // Redirecionar para a página principal
-        window.location.href = 'index.html'
+        // Exibir pop-up de confirmação
+        alert('Mensagem enviada com sucesso! Obrigado por compartilhar seu amor 💖')
 
     } catch (error) {
         console.error('Erro completo:', error)

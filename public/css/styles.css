@@ -97,6 +97,8 @@ h1 {
     box-shadow: 0 2px 16px rgba(255,79,163,0.08);
     margin-bottom: 20px;
     border: 2px solid #ffe0f7;
+    max-width: 400px;
+    margin: 0 auto 20px auto;
 }
 
 .input-group {
@@ -133,20 +135,26 @@ textarea {
 }
 
 .file-label {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #ff4fa3;
-    color: white;
+    display: block;
+    width: 100%;
+    padding: 14px;
+    background: transparent;
+    color: #ff4fa3;
+    border: 2px solid #ff4fa3;
     border-radius: 8px;
     cursor: pointer;
     font-weight: bold;
-    transition: background 0.3s;
-    box-shadow: 0 2px 8px #ffb6e644;
-    border: none;
+    font-size: 18px;
+    box-shadow: none;
+    text-align: center;
+    transition: background 0.3s, color 0.3s, border 0.3s, transform 0.2s;
 }
 
 .file-label:hover {
     background: #ffb6e6;
+    color: #fff;
+    border-color: #ffb6e6;
+    transform: scale(1.03);
 }
 
 input[type="file"] {
@@ -357,10 +365,10 @@ button:hover {
         width: 160px;
     }
     .container {
-        padding: 8px;
+        padding: 18px 8vw 8px 8vw;
     }
     .share-form {
-        padding: 10px;
+        padding: 18px 10px;
     }
     .post {
         padding: 10px;
@@ -368,6 +376,19 @@ button:hover {
     .header-text-block {
         align-items: center;
         text-align: center;
+    }
+    .input-group {
+        gap: 14px;
+    }
+    .text-input, textarea {
+        font-size: 1em;
+    }
+    .file-label {
+        font-size: 1em;
+        padding: 14px;
+    }
+    .hide-on-mobile {
+        display: none !important;
     }
 }
 
@@ -1093,5 +1114,16 @@ body, .header-text-block p, .header-lead, .header-closure, .header-qr-caption, .
     background-repeat: no-repeat;
     background-position: center;
     border-radius: 8px;         /* cantos arredondados, opcional */
+}
+
+.valentines-header .subtitle {
+    max-width: 380px;
+    margin: 0 auto 1.5em auto;
+    padding: 0 10px;
+    text-align: center;
+}
+
+.valentines-header .header-img {
+    filter: drop-shadow(0 4px 16px #ffe066);
 }
   
